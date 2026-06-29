@@ -3,6 +3,11 @@ package com.minimarket.entity;
 import jakarta.persistence.*;
 
 @Entity
+/**
+ * Entidad intermedia que resuelve la relación N:M entre Carrito y Producto.
+ * Esta clase fue introducida para solucionar la limitación transaccional
+ * que duplicaba registros por cada artículo agregado al carrito.
+ */
 public class DetalleCarrito {
 
     @Id
